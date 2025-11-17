@@ -45,7 +45,7 @@ async function sendMessage() {
     
     try {
         // Call AWS Lambda function via API Gateway
-        const response = await fetch(API_ENDPOINT, {
+        const reply = await fetch(API_ENDPOINT, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -55,11 +55,11 @@ async function sendMessage() {
             })
         });
         
-        if (!response.ok) {
+        if (!reply.ok) {
             throw new Error('API request failed');
         }
         
-        const data = await response.json();
+        const data = await reply.json();
         
         // Remove typing indicator
         typingIndicator.remove();
@@ -102,5 +102,6 @@ function addTypingIndicator() {
     return typingDiv;
 
 }
+
 
 
