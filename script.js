@@ -1,6 +1,6 @@
 // TODO: Replace this with your actual API Gateway URL after deployment
 // Format: https://YOUR_API_ID.execute-api.YOUR_REGION.amazonaws.com/chat
-const API_ENDPOINT = 'REPLACE_WITH_YOUR_API_GATEWAY_URL';
+const API_ENDPOINT = 'https://usl5ywlswgratdzyjlb3xffaau0lzxlt.lambda-url.us-east-1.on.aws/';
 
 // Chat UI Elements
 const chatToggle = document.getElementById('chatToggle');
@@ -100,4 +100,5 @@ function addTypingIndicator() {
     chatMessages.scrollTop = chatMessages.scrollHeight;
     
     return typingDiv;
+
 }
