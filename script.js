@@ -1,6 +1,6 @@
 // TODO: Replace this with your actual API Gateway URL after deployment
 // Format: https://YOUR_API_ID.execute-api.YOUR_REGION.amazonaws.com/chat
-const API_ENDPOINT = 'https://usl5ywlswgratdzyjlb3xffaau0lzxlt.lambda-url.us-east-1.on.aws/';
+const API_ENDPOINT = 'https://o39jhm2eej.execute-api.us-east-1.amazonaws.com/ask';
 
 // Chat UI Elements
 const chatToggle = document.getElementById('chatToggle');
@@ -102,3 +102,4 @@ function addTypingIndicator() {
     return typingDiv;
 
 }
+
