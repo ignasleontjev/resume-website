@@ -65,7 +65,7 @@ async function sendMessage() {
         typingIndicator.remove();
         
         // Display bot response
-        addMessage(data.response, 'bot');
+        addMessage(data.reply, 'bot');
         
     } catch (error) {
         console.error('Error:', error);
@@ -102,4 +102,5 @@ function addTypingIndicator() {
     return typingDiv;
 
 }
+
 
